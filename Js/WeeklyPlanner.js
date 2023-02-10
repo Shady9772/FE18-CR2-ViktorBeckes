@@ -56,25 +56,36 @@ let plans = `[{
 
 plans = JSON.parse(plans);
 
-for(let val of plans){
+for(let x of plans){
     document.getElementById("result").innerHTML += `
     <div>
-    <div class="card" style="width: 18rem;">
-    <img src="${val.pic}" class="card-img-top" alt="${val.title}">
+    <div class=" border border-dark card" style="width: 25rem;">
+    <div>
+    <p class="btn btn-primary">Task</p>
+    </div>
+    <img src="${x.pic}" class="container border border-dark card-img-top" alt="${x.title}">
+
     <div class="card-body">
-     <h5 class="card-title">${val.title}</h5>
-     <p>${val.description}</p>
+     <h5 class="card-title text-center">${x.title}</h5>
+     <p class="text-center">${x.description}</p>
      <hr>
-     <p class="priority">Priority Level:</p>
-     <p class="btn btn-primary priorityBtn">${val.priority}</p>
-     <p>Dead Line:</p>
+    <div class="propertylevel">
+        <p class="priority fs-4">Priority Level:<span class="btn btn-primary priorityBtn">${x.priority}</span</p>
+        <div>
+        </div>
+    </div>
+     <p class="fs-5">DeadLine: 11.02.2023 18:00pm</p>
      <hr>
-     <p class="btn btn-danger likeBtn">Delete</p>
-     <p class="btn btn-success showMore">Done</p>
+     <div class="text-center">
+     <p class="btn btn-danger">Delete</p>
+     <p class="btn btn-success">Done</p>
+     </div>
     </div>
     </div>
     </div>`;
 }
+
+
 
 let btns = document.getElementsByClassName("priorityBtn");
 
@@ -82,7 +93,26 @@ for(let i = 0; i < btns.length; i++){
     btns[i].addEventListener("click", function(){
         plans[i].priority++;
         document.getElementsByClassName("priorityBtn")[i].innerHTML = plans[i].priority;
+
+        if (plans[i].priority < 2){
+            console.log("Green");   
+            document.getElementsByClassName("priorityBtn")[i].style.backgroundColor = "green";
+        }else if (plans[i].priority < 4) {
+            console.log("yellow"); 
+            document.getElementsByClassName("priorityBtn")[i].style.backgroundColor = "yellow";
+            document.getElementsByClassName("priorityBtn")[i].style.color = "black";
+        }else if (plans[i].priority < 6) {
+            console.log("red"); 
+            document.getElementsByClassName("priorityBtn")[i].style.backgroundColor = "red";
+        }else if (plans[i].priority >= 6) {
+            console.log("warrning"); 
+            document.getElementsByClassName("card")[i].style.backgroundColor = "red";
+        }
     })
 }
+
+
+
+
 
 
