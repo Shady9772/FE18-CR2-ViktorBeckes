@@ -10,23 +10,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-        <h5 class="text-white h4">Collapsed content</h5>
-         <span class="text-muted">Toggleable via the navbar brand.</span>
-        </div>
-    </div>
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-    </nav>
-    <div class="imgnav"><div class="wepl text-center fs-1">Weekly planer</div></div>
+    <nav class="navbar bg-dark">
+        <form class="container-fluid justify-content-start">
+            <button class="btn btn-dark border border-light">More</button>
+            <h4 class="navbarbtn btn text-light" id="navbar1">My Planner</h4>
+            <h4 class="navbarbtn btn text-light">Home</h4>
+            <h4 class="navbarbtn btn text-light">Task</h4>
+            <h4 class="navbarbtn btn text-light">Settings</h4>
+        </form>
+      </nav>
+    <div class="imgnav"><div class="wepl text-center fs-1">Weekly planner</div></div>
 
     <div class="container">
-        <div class="row row-cols-3" id="result"></div>
+        <div class="row row-cols-3 mediacards" id="result"></div>
     </div>
 
     <footer class="bg-dark text-center text-white">
@@ -58,9 +54,8 @@
             </form>
           </div>
         <!-- Copyright -->
-        <div class="text-center p-3 bg-dark ">
-          © 2023 Copyright:
-          <a class="text-white copyright" href="#">Viktor Beckes</a>
+        <div class="text-center p-3 bg-dark copyright">
+          © 2023 Copyright: Viktor Beckes
         </div>
         <!-- Copyright -->
       </footer>
