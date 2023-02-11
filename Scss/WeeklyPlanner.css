@@ -1,16 +1,3 @@
-* {
-  font-family: "Papyrus";
-}
-
-.card {
-  box-shadow: 0px 0px 10px black;
-}
-
-.copyright {
-  -webkit-text-decoration: None;
-          text-decoration: None;
-}
-
 .wepl {
   background-color: black;
   opacity: 0.8;
@@ -29,8 +16,29 @@
   margin-bottom: 100px;
 }
 
+.navbarbtn {
+  margin-top: 1rem;
+}
+
+.copyright {
+  -webkit-text-decoration: None;
+          text-decoration: None;
+}
+
 footer {
   margin-top: 100px;
+}
+
+.copyright:hover {
+  color: grey;
+}
+
+* {
+  font-family: "Papyrus";
+}
+
+.card {
+  box-shadow: 0px 0px 10px black;
 }
 
 .card {
@@ -54,20 +62,24 @@ footer {
   margin-left: 1rem;
 }
 
-.navbarbtn {
-  margin-top: 1rem;
-}
-
-.copyright:hover {
-  color: grey;
-}
-
 .deadline:hover {
   color: grey;
 }
 
-#navbar1:hover {
+.pull-right {
+  margin-right: 1rem;
+}
+
+.fa-ellipsis-v:hover {
   color: red;
+}
+
+.fa-bookmark:hover {
+  color: red;
+}
+
+.fa-exclamation-circle:hover {
+  color: grey;
 }
 
 @media screen and (max-width: 1400px) {

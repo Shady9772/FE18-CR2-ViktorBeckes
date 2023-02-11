@@ -5,30 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weekly Planner</title>
-    <link rel="stylesheet" type="text/css" href="Scss\WeeklyPlanner.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="Scss\WeeklyPlanner.css"> <!--SCSS file link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> <!--BootStrap-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--font for special characters-->
 </head>
 <body>
-    <nav class="navbar bg-dark">
+    <nav class="navbar bg-dark">   <!--navbar-->
         <form class="container-fluid justify-content-start">
             <button class="btn btn-dark border border-light">More</button>
-            <h4 class="navbarbtn btn text-light" id="navbar1">My Planner</h4>
+            <h4 class="navbarbtn btn text-light">My Planner</h4>
             <h4 class="navbarbtn btn text-light">Home</h4>
             <h4 class="navbarbtn btn text-light">Task</h4>
             <h4 class="navbarbtn btn text-light">Settings</h4>
         </form>
       </nav>
-    <div class="imgnav"><div class="wepl text-center fs-1">Weekly planner</div></div>
+    <div class="imgnav"><div class="wepl text-center fs-1">Weekly planner</div></div> <!--navbar-->
 
-    <div class="container">
+    <div class="container"> <!--body where the cards are being displayed-->
         <div class="row row-cols-3 mediacards" id="result"></div>
-    </div>
+    </div>   <!--body where the cards are being displayed-->
 
-    <footer class="bg-dark text-center text-white">
-        <!-- Grid container -->
+    <footer class="bg-dark text-center text-white"> <!--footer-->
         <div class="container p-4 pb-0">
-          <!-- Section: Social media -->
         <section class="mb-4">
             <!-- Facebook -->
             <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fa fa-facebook"></i></a>
@@ -43,9 +41,7 @@
             <!-- Github -->
             <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fa fa-github"></i></a>
           </section>
-          <!-- Section: Social media -->
         </div>
-        <!-- Grid container -->
         <div class="container-fluid">
             <form class="d-flex" role="search">
                 <p>Sighn up for our newsletter</p>
@@ -53,13 +49,12 @@
               <button class="btn btn-dark border border-white" type="submit">Subscribe</button>
             </form>
           </div>
-        <!-- Copyright -->
+        <!-- Copyright with my name-->
         <div class="text-center p-3 bg-dark copyright">
           © 2023 Copyright: Viktor Beckes
         </div>
-        <!-- Copyright -->
-      </footer>
+      </footer> <!--footer-->
 
-    <script src="Js\WeeklyPlanner.js"></script>
+    <script src="Js\WeeklyPlanner.js"></script> <!--JavaScript link-->
 </body>
 </html>
