@@ -49,13 +49,13 @@ plans = JSON.parse(plans); //converts the PLANS in to a JSON file
 
 for(let o of plans){ //makes a loop that ceartes the cards remplate with bootsstrap
     document.getElementById("result").innerHTML += `
-    <div class="add">
-    <div class=" border border-dark card">
-    <div class="spacer"></div>
-    <div class="taskbtn">
-    <p class="btn btn-primary">Task</p>
-    <i class="pull-right fa fa-bookmark"></i>
-    <i class="pull-right fa fa-ellipsis-v"></i>
+    <div>
+      <div class="shadow-lg border border-dark p-3 mb-5 card">
+            <div class="spacer"></div>
+            <div class="taskbtn">
+                <p class="btn btn-primary">Task</p>
+                <i class="pull-right fa fa-bookmark"></i>
+                <i class="pull-right fa fa-ellipsis-v"></i>
     </div>
     <div class="container">
     <img src="${o.picture}" class=" border border-dark card-img-top cardpic" alt="${o.title}">
@@ -74,6 +74,7 @@ for(let o of plans){ //makes a loop that ceartes the cards remplate with bootsst
     <div class="text-center">
     <p class="btn btn-danger delete">Delete</p>
     <p class="btn btn-success">Done</p>
+    </div>
     </div>
     </div>
     </div>
