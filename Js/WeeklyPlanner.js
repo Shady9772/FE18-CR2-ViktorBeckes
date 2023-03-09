@@ -19,28 +19,28 @@ let plans = `[{
     "priority" : "0",
     "picture" : "Images/code.jpg"
 },{
-    "title" : "Kill Joe",
-    "about" : "Next hit",
+    "title" : "no data",
+    "about" : "no data",
     "priority" : "0",
     "picture" : "Images/murder.jpg"
 },{
-    "title" : "Hide Body",
-    "about" : "Joes pretty heavy, have to cremate him",
+    "title" : "no data",
+    "about" : "no data",
     "priority" : "0",
     "picture" : "Images/dead.jpg"
 },{
-    "title" : "Hide Gun",
-    "about" : "hide evidence",
+    "title" : "no data",
+    "about" : "no data",
     "priority" : "0",
     "picture" : "Images/gun.jpg"
 },{
-    "title" : "Leave The Country",
-    "about" : "Run away after becoming a FSDeveloper",
+    "title" : "no data",
+    "about" : "no data",
     "priority" : "0",
     "picture" : "Images/border.jpg"
 },{
-    "title" : "Cheat On Wife",
-    "about" : "getting rid of her nagging ass",
+    "title" : "no data",
+    "about" : "no data",
     "priority" : "0",
     "picture" : "Images/cheat.jpg"
 }]`;
