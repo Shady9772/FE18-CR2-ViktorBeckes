@@ -19,30 +19,30 @@ let plans = `[{
     "priority" : "0",
     "picture" : "Images/code.jpg"
 },{
-    "title" : "no data",
-    "about" : "no data",
+    "title" : "Pay Bills",
+    "about" : "electricity and phone bill",
     "priority" : "0",
-    "picture" : "Images/murder.jpg"
+    "picture" : "Images/bills.jpg"
 },{
-    "title" : "no data",
-    "about" : "no data",
+    "title" : "Make Portfolio",
+    "about" : "future job hunt",
     "priority" : "0",
-    "picture" : "Images/dead.jpg"
+    "picture" : "Images/portfolio.jpg"
 },{
-    "title" : "no data",
-    "about" : "no data",
+    "title" : "Check on parents",
+    "about" : "make sure they okay",
     "priority" : "0",
-    "picture" : "Images/gun.jpg"
+    "picture" : "Images/parents.jpg"
 },{
-    "title" : "no data",
-    "about" : "no data",
+    "title" : "Book Holiday",
+    "about" : "make sure to book holidays",
     "priority" : "0",
-    "picture" : "Images/border.jpg"
+    "picture" : "Images/holiday.jpg"
 },{
-    "title" : "no data",
-    "about" : "no data",
+    "title" : "Book a flight",
+    "about" : "book a plane for the holiday",
     "priority" : "0",
-    "picture" : "Images/cheat.jpg"
+    "picture" : "Images/plane.jpg"
 }]`;
 
 plans = JSON.parse(plans); //converts the PLANS in to a JSON file
